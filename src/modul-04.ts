@@ -87,9 +87,9 @@ function logMethod(target: any, propertyKey: string, descriptor: PropertyDescrip
     return descriptor;
 }
 
-@logClassName
+// @logClassName
 export class Calculator {
-    @logMethod
+    // @logMethod
     add(a: number, b: number) {
         return a + b;
     }

@@ -2,21 +2,21 @@
 KursRepository zu Kurs TypeScript - Grundlagenkurs der ppedv AG  
 Trainer: Ortwin Carstocea (ortwinc@ppedv.de)
 
-1. TS Grundlagen:  
+- [x] [TS Grundlagen](src/index.ts)  
 Allgemeines, VSCode, Node, TSC 
-1. Statisches Typsystem:  
+- [x] [Statisches Typsystem](src/modul-02.ts)  
 Typen, Primitives, Union Type, Objects 
-1. Typsicherheit:  
+- [x] [Typsicherheit](src/modul-03.ts)  
 Type Assertion, Funktionen 
-1. OOP:  
+- [x] [OOP](src/modul-04.ts)  
 Namespaces, Klassen, Interfaces
 
-1. Module und Scopes:  
+- [x] [Module und Scopes](src/modul-05.ts)  
 Modulsystem, Gültigkeitsbereiche, Ambients 
-1. TypeScript & ECMAScript:  
+- [x] [TypeScript & ECMAScript](src/modul-06.ts)  
 Pfeilfunktionen, Promise, Async/Await 
-1. Fortgeschrittene Techniken:  
+- [x] [Fortgeschrittene Techniken](src/modul-07.ts)  
 Utility Types, Generics, Decorators, Declaration File 
-1. Fehlersuche & Debugging:  
+- [x] [Fehlersuche & Debugging](src/modul-08.ts)  
 DevTools, Source Maps, Logging
 

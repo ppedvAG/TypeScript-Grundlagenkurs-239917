@@ -69,30 +69,3 @@ const myBunny = {
         console.log('quack');
     }
 } as Animal;
-
-// Decorators
-function logClassName(target: Function, className?: string) {
-    console.log(`Class name: ${target.name}`);
-}
-
-function logMethod(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-    let orginalMethod = descriptor.value;
-
-    descriptor.value = function(...args: []) {
-        console.log(`Method ${propertyKey} called with args
-            ${JSON.stringify(args)}`);
-            return orginalMethod.apply(this, args);
-    }
-
-    return descriptor;
-}
-
-// @logClassName
-export class Calculator {
-    // @logMethod
-    add(a: number, b: number) {
-        return a + b;
-    }
-}
-
-new Calculator().add(2, 45)

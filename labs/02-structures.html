@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-structures</title>
+
+</head>
+
+<body>
+    <h1>02-structures</h1>
+    <h2>Arrays</h2>
+    <pre>
+        siehe script
+    </pre>
+    <h2>HTMLCollection</h2>
+    <pre>
+        bekommt man z.B. bei getElementsByTagName()
+    </pre>
+    <hr>
+
+    <h2>NODE LIST of Elements</h2>
+    <pre>
+        wie z.B. bei querySelectorAll()
+    </pre>
+    <input type="number" value="33">
+    <input type="number" value="44">
+    <input type="number" value="55">
+
+
+    <h2>HTMLCollectionOf Elements</h2>
+    <pre>
+        getElementsByClassName()
+    </pre>
+    <div class="red">division</div>
+    <p class="red">paragraph</p>
+    <input type="text" class="red">
+    <output class="red"></output>
+    <hr>
+
+
+    <h2>Übung zu Structures</h2>
+    <pre>
+        Wenden Sie an allen Elementen mit der Klasse 'red' im Abschnitt 'HTMLCollectionOf Elements' folgende Stile dynamisch (in TS) an: 
+        color: 'red';
+        background-color: 'pink';
+
+        Fügen Sie den Elementen auch den Text 'Klasse angewendet' hinzu.
+    </pre>
+    <hr>
+
+
+
+    <h2>Tupel</h2>
+    <pre>
+        siehe Script
+    </pre>
+    <hr>
+
+
+    <h2>Übung zu Tupel</h2>
+    <pre>
+        Fragen Sie vom Benutzer 3 2D-Koordinaten ab.
+        Verwenden Sie diese, um ein SVG-Polygon zu zeichnen.
+
+        Syntax für Polygone siehe hier in html:
+    </pre>
+
+    <p>Beispiel Polygon</p>
+    <svg width="300" height="300">
+        <polygon points="22,3 14,25 5,30" style="fill: lime; stroke: purple; stroke-width: 3"></polygon>
+    </svg>
+
+    <p>dynamisches Polygon</p>
+    <div id="coordinates">
+        <div> coord1
+            <lable>x<input type="number" value="0" min="0" max="300"></lable>
+            <lable>y<input type="number" value="0" min="0" max="300"></lable>
+        </div>
+        <div> coord2
+            <lable>x<input type="text" value="0" min="0" max="300"></lable>
+            <lable>y<input type="text" value="0" min="0" max="300"></lable>
+        </div>
+        <div> coord3
+            <lable>x<input type="text" value="0" min="0" max="300"></lable>
+            <lable>y<input type="text" value="0" min="0" max="300"></lable>
+        </div>
+        <button id="draw">draw polygon</button>
+
+    </div>
+    <svg width="300" height="300" id="svgForPolygon"  style="border: thin solid">
+
+    </svg>
+
+
+
+    <script src="js/02-structures.js"></script>
+    <script src="js/02-structures-uebung.js"></script>
+    <script src="js/02-tuples-uebung.js"></script>
+</body>
+
+</html>
